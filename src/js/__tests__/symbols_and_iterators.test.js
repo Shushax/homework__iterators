@@ -1,4 +1,4 @@
-import Team2 from '../symbols_and_generations'
+import Team1 from '../symbols_and_iterators'
 
 const archer = {
     name: 'Лучник',
@@ -27,7 +27,7 @@ const warrior = {
     defence: 10
 }
 
-let team = new Team2(archer, heal, warrior);
+let team = new Team1(archer, heal, warrior);
 
 test('create team', () => {
 
@@ -40,7 +40,7 @@ test('create team', () => {
 
     expect(received).toEqual(expected);
 
-})
+});
 
 test('iteration', () => {
 
@@ -57,7 +57,4 @@ test('iteration', () => {
     const expected = 'Цикл прошел успешно!';
 
     expect(received).toBe(expected);
-
-
-
-})
+});
